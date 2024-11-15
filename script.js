@@ -1,7 +1,4 @@
 
-
-
-
 /**
  * a station = {
  *  id: number,
@@ -20,7 +17,6 @@ let weatherData = {
   downfall: '', // rain in millimeter, total of rain per 15min
   weatherType: '' //type of weather, in string
 }
-
 
 function getStations(stationsOld) {
   let stationsNew = [] // create new temporary array to house the new stations
@@ -42,7 +38,6 @@ function getStations(stationsOld) {
   }).catch((err) => {
     console.log(err) // logs an error if anything would go wrong
   })
-
 }
 
 getStations(stations)
