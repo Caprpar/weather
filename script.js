@@ -25,13 +25,27 @@ displayWeatherImagePseudo(weatherData) {
       imgElement.src = 'clearSkies.jpg';
     } else if (overcastValue >= 50 && overcastValue < 75) {
       imgElement.src = 'sligthlyOvercast.jpg';
-    } else (overcastValue >= 75){
-      imgElement.src = 'overcast.jpg'
+    } else if (overcastValue >= 75) {
+      imgElement.src = 'overcast.jpg';
     }
   }
 
   /**pseudocode for inputting images depending on downfall*/
   function downfallValue(weatherData) {
     const downfallValue = getWeatherValue();
+
+    let imgElement = document.getElementById('myImage');
+    //once again, only temporary
+    if (downfallValue === 0) {
+      imgElement.src = 'noRain.jpg';
+    } else if (downfallValue <= 0.5) {
+      imgElement.src = 'sligthRain.jpg';
+    } else if (downfallValue > 0.5 && downfallValue < 3.9) {
+      imgElement.src = 'moderateRain.jpg';
+    } else if (downfallValue >= 4 && downfallValue < 8) {
+      imgElement.src = 'heavyRain.jpg';
+    } else if (downfallValue >= 8) {
+      imgElement.src = 'stormRain.jpg'
+    }
   }
 }
