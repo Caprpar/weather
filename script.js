@@ -7,11 +7,11 @@ displayWeatherImagePseudo(weatherData) {
     //could be a stylesheet link aswell, only temporary
 
     if (temperatureValue < 0) {
-      imgElement.src = 'negativeDegrees.jpg';
+      imgElement.src = 'negativeDegrees.svg';
     } else if (temperatureValue === 0) {
-      imgElement.src = 'freezingPoint.jpg';
+      imgElement.src = 'freezingPoint.svg';
     } else {
-      imgElement.src = 'positiveDegrees.jpg';
+      imgElement.src = 'positiveDegrees.svg';
     }
   }
 
@@ -22,11 +22,11 @@ displayWeatherImagePseudo(weatherData) {
     let imgElement = document.getElementById('myImage');
     //could be a stylesheet link aswell, only temporary
     if (overcastValue < 50) {
-      imgElement.src = 'clearSkies.jpg';
+      imgElement.src = 'clearSkies.svg';
     } else if (overcastValue >= 50 && overcastValue < 75) {
-      imgElement.src = 'sligthlyOvercast.jpg';
+      imgElement.src = 'sligthlyOvercast.svg';
     } else if (overcastValue >= 75) {
-      imgElement.src = 'overcast.jpg';
+      imgElement.src = 'overcast.svg';
     }
   }
 
@@ -37,15 +37,15 @@ displayWeatherImagePseudo(weatherData) {
     let imgElement = document.getElementById('myImage');
     //once again, only temporary
     if (downfallValue === 0) {
-      imgElement.src = 'noRain.jpg';
+      imgElement.src = 'clearSkies.svg';
     } else if (downfallValue <= 0.5) {
-      imgElement.src = 'sligthRain.jpg';
+      imgElement.src = 'slightRain.svg';
     } else if (downfallValue > 0.5 && downfallValue < 3.9) {
-      imgElement.src = 'moderateRain.jpg';
+      imgElement.src = 'moderateRain.svg';
     } else if (downfallValue >= 4 && downfallValue < 8) {
-      imgElement.src = 'heavyRain.jpg';
+      imgElement.src = 'heavyRain.svg';
     } else if (downfallValue >= 8) {
-      imgElement.src = 'stormRain.jpg'
+      imgElement.src = 'stormRain.svg'
     }
   }
 }
