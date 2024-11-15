@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Weather</title>
 </head>
-<body>
 
+<body>
+  <aside>
+    <ul id="station-list">
+      <li class="station" id="12345">Mölndal</li>
+      <li class="station" id="43214">Göteborg</li>
+      <li class="station" id="123123">Malmö</li>
+    </ul>
+  </aside>
+  <main>
+    <div>
+      <div id="choose-date">välj datum</div>
+      <div id="weather-data">
+        <ul>
+          <li>luftfuktighet: 12%</li>
+          <li>Molnvärde: 10%</li>
+          <li>Chans för nederbörd: 80%</li>
+        </ul>
+      </div>
+    </div>
+    <div id="display-forecast">
+      <div id="forecast">Sun image</div>
+      <div id="degree-ball">8°</div>
+    </div>
+    <div id="location">
+      <p id="location-name">Mölndal</p>
+    </div>
+  </main>
   <script src="script.js"></script>
 </body>
+
 </html>
