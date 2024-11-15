@@ -17,7 +17,7 @@
     </ul>
   </aside>
   <main>
-    <div>
+    <div id="header">
       <div id="choose-date">välj datum</div>
       <div id="weather-data">
         <ul>
@@ -27,13 +27,17 @@
         </ul>
       </div>
     </div>
+
     <div id="display-forecast">
-      <div id="forecast">Sun image</div>
-      <div id="degree-ball">8°</div>
+      <div id="forecast">
+        <img src="sun.png" alt="sun-image" id="forecast-img">
+        <div id="degree">8°</div>
+        <div id="location">
+          <p id="location-name">Mölndal</p>
+        </div>
+      </div>
     </div>
-    <div id="location">
-      <p id="location-name">Mölndal</p>
-    </div>
+
   </main>
   <script src="script.js"></script>
 </body>
